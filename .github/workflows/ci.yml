@@ -34,7 +34,7 @@ jobs:
 
       - name: Run Ruff
         run: |
-          poetry run ruff todo_app
+          poetry run ruff check todo_app
 
       - name: Run Mypy
         run: |
