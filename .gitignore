@@ -1,0 +1,16 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Poetry virtual environments
+.venv/
+
+# Test artifacts
+.coverage
+htmlcov/
+
+# OS files
+.DS_Store
+
