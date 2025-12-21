@@ -1,5 +1,6 @@
 from typing import List
 
+
 class TodoList:
     def __init__(self):
         self.items: List[str] = []
