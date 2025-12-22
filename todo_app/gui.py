@@ -3,9 +3,8 @@ from tkinter import messagebox
 
 from todo_app.core import TodoList
 
-
 class TodoApp:
-    def __init__(self, root):
+    def __init__(self, root: tk.Tk) -> None:
         self.root = root
         self.root.title("Todo App")
 
@@ -44,7 +43,7 @@ class TodoApp:
         self.refresh_listbox()
 
     def delete_item(self) -> None:
-        selection = self.listbox.curselection()
+        selection = self.listbox.curselection()  # type: ignore[no-untyped-call]
         if not selection:
             messagebox.showwarning("Warning", "No item selected")
             return
@@ -54,10 +53,10 @@ class TodoApp:
 
     def save_items(self) -> None:
         self.todo.save("todo_items.txt")
-        messagebox.showinfor("Saved", "Todo list saved!")
+        messagebox.showinfo("Saved", "Todo list saved!")
 
 
-def run():
+def run() -> None:
     root = tk.Tk()
     TodoApp(root)
     root.mainloop()

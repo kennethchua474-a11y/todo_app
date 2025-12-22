@@ -2,7 +2,7 @@ from typing import List
 
 
 class TodoList:
-    def __init__(self):
+    def __init__(self) -> None:
         self.items: List[str] = []
 
     def add_item(self, item: str) -> None:
