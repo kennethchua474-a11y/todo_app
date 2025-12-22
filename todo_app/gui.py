@@ -3,6 +3,7 @@ from tkinter import messagebox
 
 from todo_app.core import TodoList
 
+
 class TodoApp:
     def __init__(self, root: tk.Tk) -> None:
         self.root = root
