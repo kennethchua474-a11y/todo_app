@@ -5,6 +5,9 @@ description = ""
 authors = ["Kenneth Chua <cloudberry2011@gmail.com>"]
 readme = "README.md"
 
+[tool.poetry.scripts]
+todo-app = "todo_app.gui:run"
+
 [tool.poetry.dependencies]
 python = "^3.12"
 
